@@ -26,18 +26,8 @@
 
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px 80px 20px; /* Increased top padding since we removed the subtitle */
             max-width: 800px;
-        }
-
-        .brand-subtitle {
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: 4px;
-            color: var(--primary);
-            font-size: 0.85em;
-            margin-bottom: 25px;
-            display: block;
         }
 
         h1 {
@@ -46,6 +36,7 @@
             margin: 0;
             color: var(--text);
             line-height: 1.1;
+            letter-spacing: -1px;
         }
 
         .description {
@@ -114,34 +105,36 @@
             text-align: center;
             font-size: 0.85em;
             color: #B0BEC5;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             width: 100%;
             border-top: 1px solid var(--accent);
         }
+
+        .footer p { margin: 5px 0; }
 
         .footer a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 800;
-            margin: 0 15px;
+            margin-top: 10px;
+            display: inline-block;
         }
 
         @media (max-width: 600px) {
             h1 { font-size: 2.5em; }
-            .hero { padding: 60px 20px; }
+            .hero { padding: 80px 20px 60px 20px; }
         }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <span class="brand-subtitle">ChronoSpecter Systems Presents</span>
         <h1>KJV Verses<br>and Reflections</h1>
         <p class="description">
             Experience the majestic beauty of the King James Version with 400 hand-picked verses and profound, modern reflections designed for your daily spiritual growth.
         </p>
         
-        <a href="https://play.google.com/store/apps/details?id=com.chronospectersystems.kjvversesandreflections" class="download-button">
+        <a href="https://play.google.com/store/apps/details?id=com.chronospectersystems.kjvversesandreflections" class="download-button" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Play Store Logo">
             GET IT ON GOOGLE PLAY
         </a>
@@ -163,11 +156,8 @@
     </div>
 
     <div class="footer">
-        <p>© 2026 ChronoSpecter Systems. All Rights Reserved.</p>
-        <p>
-            <!-- Point this to your existing Privacy Policy URL -->
-            <a href="https://chronospectersystems.github.io/kjvversesandreflections-privacy-policy/">Privacy Policy</a>
-        </p>
+        <p>© 2026 ChronoSpecter Systems. All rights reserved.</p>
+        <a href="https://chronospectersystems.github.io/kjvversesandreflections-privacy-policy/" target="_blank">Privacy Policy</a>
     </div>
 
 </body>
